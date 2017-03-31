@@ -1,0 +1,496 @@
+
+/*  Fonts  */
+@font-face {
+    font-family: 'wcmanonegrabta';
+    src: url('../fonts/wcmanonegrabta.eot');
+    src: url('../fonts/wcmanonegrabta.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/wcmanonegrabta.woff') format('woff'),
+         url('../fonts/wcmanonegrabta.ttf') format('truetype'),
+         url('../fonts/wcmanonegrabta.svg#wcmanonegrabta') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleo-regular';
+    src: url('../fonts/aleo-regular.eot');
+    src: url('../fonts/aleo-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo-regular.woff') format('woff'),
+         url('../fonts/aleo-regular.ttf') format('truetype'),
+         url('../fonts/aleo-regular.svg#aleo-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleo-light';
+    src: url('../fonts/aleo-light.eot');
+    src: url('../fonts/aleo-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo-light.woff') format('woff'),
+         url('../fonts/aleo-light.ttf') format('truetype'),
+         url('../fonts/aleo-light.svg#aleo-light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleo-italic';
+    src: url('../fonts/aleo-italic.eot');
+    src: url('../fonts/aleo-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo-italic.woff') format('woff'),
+         url('../fonts/aleo-italic.ttf') format('truetype'),
+         url('../fonts/aleo-italic.svg#aleo-italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleo-bold';
+    src: url('../fonts/aleo-bold.eot');
+    src: url('../fonts/aleo-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo-bold.woff') format('woff'),
+         url('../fonts/aleo-bold.ttf') format('truetype'),
+         url('../fonts/aleo-bold.svg#aleo-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*  General CSS*/
+body{
+    background: #fff;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1, h2, h4, h5 ,h6{
+    color: #626262;
+    font-family: "aleo-regular", arial;
+    letter-spacing: 1px;
+}
+
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6          { font-weight: bolder }
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+header nav ul li a,
+.featured_dishes .slider_nav a,
+.gallery .media section img,
+footer .footer_nav ul li a{
+    transition:all .3s linear;
+    -webkit-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -o-transition:all .3s linear;
+}
+
+
+
+/*    header    */
+header{
+    width: 100%;
+    background: #000;
+}
+
+#mobile-menu {
+  float: right;
+  margin: 5% 18px;
+  width: 40px;
+  cursor: pointer;
+}
+
+header .logo{
+    float: left;
+    max-width: 320px;
+    width: 70%;
+    padding: 6% 0;
+}
+
+header nav {
+    display: none;
+    clear: both;
+    position: absolute;
+    width: 100%;
+    background: #000;
+    right: 0;
+    top: 100%;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: block;
+    margin: 10px 20px;
+    text-align: right;
+}
+
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: "aleo-regular", arial;
+    font-size: 14px;
+    letter-spacing: .5px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover{
+    color: #16538b;
+    border-bottom: 2px solid #16538b;
+}
+
+
+/*    home    */
+.home{
+    width: 100%;
+    padding: 350px 0 15%;
+    background: url('../img/home.jpg') 73% top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*    menu    */
+.menu{
+    width: 100%;
+    overflow: hidden;
+    border-top: 4px solid #16538b;
+    padding-bottom: 100px;
+}
+
+.menu .wrapper {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.menu .menu_title{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.menu .menu_title h2{
+    display: inline-block;
+    margin: 0;
+    padding: 20px 25px 35px 25px;
+    background: url('../img/ribbon.svg') no-repeat;
+    background-position: 50% 0;
+
+    color: #fff;
+    font-family: "aleo-bold", arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu article{
+    max-width: 490px;
+    margin: 0 auto;
+}
+
+.menu .mean_menu{
+    overflow: hidden;
+}
+
+.menu .hidden_items{
+    display: none;
+    overflow: hidden;
+    clear: both;
+}
+
+.menu article ul{
+    list-style: none;
+}
+
+.menu article ul li{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.menu article ul li .item_info{
+    float: left;
+    width: calc(100% - 40px);
+}
+
+.menu article ul li h3{
+    color: #545454;
+    font-family: "aleo-regular", arial;
+    font-size: 16px;
+    margin: 0;
+    background: #fff;
+    padding: 0 40px 10px 0;
+    letter-spacing: .5px;
+    font-weight: normal;
+}
+
+.menu article ul li .item_desc{
+    color: #b7b7b7;
+    font-family: "aleo-italic", arial;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.menu article ul li .price{
+    float: right;
+    color: #555;
+    font-family: "aleo-regular", arial;
+    font-size: 16px;
+    background: #fff;
+    margin: 0;
+    font-weight: normal;
+    width: 30px;
+    text-align: right;
+}
+
+.menu article ul li .separator{
+    width: 100%;
+    height: 1px;
+    background: #e3e1e1;
+    position: absolute;
+    top: 10px;
+    border: 0;
+    z-index: -1;
+}
+
+.menu .load-more{
+    display: block;
+    text-align: center;
+}
+
+.menu .load-more a{
+    text-decoration: none;
+    display: inline-block;
+    color: #b7b7b7;
+    margin-top: 30px;
+    padding: 10px 15px;
+    border: 1px solid #d7d5d5;
+
+    color: #b7b7b7;
+    font-family: "aleo-regular", arial;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.menu .load-more a hr{
+    width: 1px;
+    height: 12px;
+    border: 0;
+    background: #b7b7b7;
+    display: inline-block;
+    margin: 0 9px -1px 7px;
+}
+
+.menu .load-more a .bottom_arrow,
+.menu .load-more a .top_arrow{
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background-repeat: repeat-y;
+    margin-bottom: 1px;
+}
+
+.menu .load-more a .bottom_arrow{
+    background: url('../img/bottom_arrow.png');
+}
+
+.menu .load-more a .top_arrow{
+    background: url('../img/top_arrow.png');
+}
+
+/*    gallery    */
+.gallery {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.gallery h3 {
+    text-align: center;
+    font-family: "aleo-bold", arial;
+    letter-spacing: 1px;
+    color: #16538b;
+
+}
+.gallery img {
+    max-width: 100%;
+    float: left;
+}
+
+.gallery .small-images img.thirty {
+    width: 30%;
+}
+
+.gallery .small-images img.forty {
+    width: 40%;
+}
+
+/*    Beer Menu    */
+
+.button {
+  margin: auto;
+  padding-left: 15%;
+  padding-top: 5px;
+}
+
+.beer_button {
+  font: bold 20px Arial;
+  text-decoration: none;
+  background-color: #16538b;
+  color: #FFF;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  max-width: 100%;
+  cursor: pointer;
+  display: block;
+  width: 255px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+
+
+
+/*    footer    */
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background: #000;
+    display: block;
+}
+
+footer .address {
+    color: #fff;
+    font-family: "aleo-bold", arial;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: normal;
+    letter-spacing: 2.5px;
+    width: 70%;
+    padding: 2%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.address span {
+  display: inline-block;;
+}
+
+.address a {
+  display: block;
+}
+
+footer a.facebook {
+  display: block;
+  width: 35px;
+  margin: 0 auto;
+}
+
+
+/* Media Query Mobile to Desktop Break at 550px */
+@media (min-width: 550px) {
+
+  header .logo {
+    padding: 20px 0;
+  }
+
+  #mobile-menu {
+    margin: 10px 18px;
+  }
+
+  header nav ul {
+    text-align: center;
+  }
+
+  header nav ul li {
+    display: inline-block;
+  }
+
+  footer {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  footer .address {
+    text-align: left;
+    float: left;
+  }
+
+  footer .facebook {
+    float: right;
+  }
+}
+/* Media Query Mobile to Desktop Break at 800px */
+@media (min-width: 800px) {
+  #mobile-menu {
+    display: none;
+  }
+
+  header nav {
+    display: block !important;
+    position: static;
+    float: right;
+    clear: none;
+    width: 60%;
+    max-width: 500px;
+    margin-top: 7px;
+  }
+
+  article.lmenu {
+      float: left;
+      width: 49%;
+  }
+
+  article.rmenu {
+      float: right;
+      width: 49%;
+  }
+
+  .gallery {
+      max-width: 1200px;
+  }
+
+  .gallery section {
+      float: left;
+      width: 50%;
+  }
+}
